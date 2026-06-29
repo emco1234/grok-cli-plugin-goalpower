@@ -1,0 +1,17 @@
+{
+  "name": "goalpower",
+  "version": "2.0.2",
+  "description": "Goalpower for Grok Build CLI — autonomous long-running goal mode with multi-round skeptic verification. Local reimplementation of native /goal semantics without xAI backend dependency.",
+  "author": {
+    "name": "emco1234",
+    "email": "info@contentplanning.ai",
+    "url": "https://github.com/emco1234"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/emco1234/grok-goalpower",
+  "components": {
+    "skills": ["skills/goalpower"],
+    "agents": ["agents/goalpower-implementer.md", "agents/goalpower-skeptic.md"],
+    "commands": ["commands/goalpower.md"]
+  }
+}
