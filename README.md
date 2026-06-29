@@ -65,13 +65,13 @@ When you run `/goalpower <objective>`, the Grok plugin orchestrates a loop:
 ### Option A — Install via `grok plugin install` (recommended)
 
 ```bash
-grok plugin install emco1234/grok-goalpower --trust
+grok plugin install emco1234/grok-cli-plugin-goalpower --trust
 ```
 
 ### Option B — Manual clone
 
 ```bash
-git clone https://github.com/emco1234/grok-goalpower.git \
+git clone https://github.com/emco1234/grok-cli-plugin-goalpower.git \
   ~/.grok/plugins/goalpower
 ```
 
@@ -268,8 +268,8 @@ See [`examples/`](./examples) for:
 ## 🛠️ Development
 
 ```bash
-git clone https://github.com/emco1234/grok-goalpower.git
-cd grok-goalpower
+git clone https://github.com/emco1234/grok-cli-plugin-goalpower.git
+cd grok-cli-plugin-goalpower
 # Symlink into ~/.grok/plugins/ for live testing:
 ln -sf "$PWD" ~/.grok/plugins/goalpower
 ```
@@ -287,7 +287,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full dev guide.
 - [ ] Skeptic personas (security-focused, perf-focused, correctness-focused)
 - [ ] Verdict diff visualization between rounds
 
-See [open issues](https://github.com/emco1234/grok-goalpower/issues). PRs welcome.
+See [open issues](https://github.com/emco1234/grok-cli-plugin-goalpower/issues). PRs welcome.
 
 ---
 
@@ -305,10 +305,10 @@ MIT — see [`LICENSE`](./LICENSE).
 
 ## ⭐ Stargazers over time
 
-[![Star History Chart](https://api.star-history.com/svg?repos=emco1234/grok-goalpower&type=Date)](https://star-history.com/#emco1234/grok-goalpower&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=emco1234/grok-cli-plugin-goalpower&type=Date)](https://star-history.com/#emco1234/grok-cli-plugin-goalpower&Date)
 
 <div align="center">
 
-**If Grok Goalpower saved you from a fabricated "done" — consider [starring ⚡](https://github.com/emco1234/grok-goalpower/stargazers) the repo.**
+**If the Grok Goal plugin saved you from a fabricated "done" — consider [starring ⚡](https://github.com/emco1234/grok-cli-plugin-goalpower/stargazers) the repo.**
 
 </div>

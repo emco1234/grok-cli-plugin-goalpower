@@ -16,7 +16,7 @@ By participating you agree to abide by the [Code of Conduct](./CODE_OF_CONDUCT.m
 ### Get the code
 
 ```bash
-git clone https://github.com/emco1234/grok-goalpower.git
+git clone https://github.com/emco1234/grok-cli-plugin-goalpower.git
 cd grok-goalpower
 ```
 
@@ -126,4 +126,4 @@ By contributing, you agree that your contributions will be licensed under the [M
 
 ## Questions?
 
-Open a [discussion](https://github.com/emco1234/grok-goalpower/discussions) or email **info@contentplanning.ai**.
+Open a [discussion](https://github.com/emco1234/grok-cli-plugin-goalpower/discussions) or email **info@contentplanning.ai**.

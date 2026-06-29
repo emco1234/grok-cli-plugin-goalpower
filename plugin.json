@@ -8,7 +8,7 @@
     "url": "https://github.com/emco1234"
   },
   "license": "MIT",
-  "homepage": "https://github.com/emco1234/grok-goalpower",
+  "homepage": "https://github.com/emco1234/grok-cli-plugin-goalpower",
   "components": {
     "skills": ["skills/goalpower"],
     "agents": ["agents/goalpower-implementer.md", "agents/goalpower-skeptic.md"],

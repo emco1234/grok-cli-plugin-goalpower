@@ -35,5 +35,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Users wanted a standalone Grok Goal plugin that works with any model Grok Build CLI supports — including custom OpenAI-compatible providers (Z.AI GLM, local models, etc.) — without depending on a specific backend. This plugin provides that as a self-contained installable unit.
 
-[Unreleased]: https://github.com/emco1234/grok-goalpower/compare/v2.0.2...HEAD
-[2.0.2]: https://github.com/emco1234/grok-goalpower/releases/tag/v2.0.2
+[Unreleased]: https://github.com/emco1234/grok-cli-plugin-goalpower/compare/v2.0.2...HEAD
+[2.0.2]: https://github.com/emco1234/grok-cli-plugin-goalpower/releases/tag/v2.0.2
