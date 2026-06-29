@@ -20,14 +20,22 @@ ROUND N (N starts at 1):
         * verif_self.txt, changed_files_manifest.txt, final_response.md, patch.diff
      - Returns a brief summary + path to STATE_DIR.
 
-  2. SKEPTIC phase (parallel panel)
-     - Spawn K skeptics in parallel: subagent_type="goalpower-skeptic"
-     - Each skeptic re-audits claims vs real files, writes verdict-{N}-{k}.json + skeptic-{N}-{k}.md
-     - Default verdict: refuted=true, confidence=high
+  2. SKEPTIC PHASE (parallel panel — DYNAMIC K)
+     - Decide K based on stakes:
+        * Round 1 or simple/low-stakes goal  → K = 1 skeptic
+        * Round 2-3 or high-stakes (production, security, payments) → K = 2 skeptics
+        * Round 4+ OR repeatedly refuted OR "stuck" signs (3+ consecutive rounds same gap) → K = 3 skeptics
+     - Spawn K skeptics in parallel, each with subagent_type="goalpower-skeptic"
+        * Each gets an independent skeptic_index (0..K-1)
+        * Each re-audits claims vs real files, writes verdict-{N}-{k}.json + skeptic-{N}-{k}.md
+        * Default verdict: refuted=true, confidence=high
+     - Why dynamic K: catches issues a single Skeptic would miss — different mental models
+        surface different gaps. Bigger stakes → broader adversarial coverage.
 
   3. PANEL AGGREGATION (you do this)
-     - Read all verdict-{N}-*.json files
+     - Read all verdict-{N}-*.json files (K files)
      - If ANY skeptic has refuted=true AND confidence=high → ROUND REFUTED
+     - If 2+ skeptics have refuted=true AND confidence=medium → ROUND REFUTED
      - Otherwise → ACCEPTED
 
   4. LOOP or EXIT
