@@ -1,8 +1,8 @@
 <div align="center">
 
-# ⚡ Grok Goalpower
+# ⚡ Grok Build CLI Plugin Goalpower
 
-### The autonomous goal mode plugin for Grok Build CLI — multi-round skeptic verification
+### The Grok Goal plugin — autonomous goal mode for Grok Build CLI with multi-round skeptic verification
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Grok Build CLI](https://img.shields.io/badge/Grok%20Build%20CLI-%E2%89%A50.2.72-blueviolet)](https://docs.x.ai/build)
@@ -11,31 +11,36 @@
 
 **Stop accepting "I'm done" on faith. Make every completion claim pass a panel of adversarial skeptics.**
 
+> **The Grok Goal plugin** — when you need a Grok autonomous agent that actually finishes the job, not just claims to.
+
 </div>
 
 ---
 
-## 🔍 Looking for a goal mode for Grok Build CLI?
+## 🔍 Looking for a Grok goal plugin?
 
-You found it. **Grok Goalpower** is a plugin for [Grok Build CLI](https://docs.x.ai/build) that adds a **persistent, multi-round goal-execution loop** to your AI coding agent. It works with your existing custom model setup (GLM, Claude, GPT, local — any model Grok Build CLI supports).
+You found it. **Grok Build CLI Plugin Goalpower** is a plugin for [Grok Build CLI](https://docs.x.ai/build) that adds a **persistent, multi-round Grok goal execution loop** to your AI coding agent. It works with your existing custom model setup (GLM, Claude, GPT, local — any model Grok Build CLI supports).
 
 If you searched for any of these, this is the right repo:
 
-- `grok build cli goal` · `grok goal mode` · `grok /goal`
-- `grok autonomous agent` · `grok long-running task`
-- `grok skeptic verification` · `grok anti-fabrication`
+- `grok plugin goal` · `grok goal plugin` · `grok goal mode`
+- `grok build cli goal` · `grok /goal` · `grok autonomous agent`
+- `grok long-running task` · `grok skeptic verification`
+- `grok anti-fabrication` · `grok verifiable AI agent`
+
+This is the canonical **Grok plugin for goal**-mode workflows.
 
 ---
 
-## 🎯 What is Grok Goalpower?
+## 🎯 What is the Grok Plugin Goalpower?
 
-When you run `/goalpower <objective>`, the plugin orchestrates a loop:
+When you run `/goalpower <objective>`, the Grok plugin orchestrates a loop:
 
-1. **Implementer subagent** works the objective autonomously and writes plan/research/logs/manifest/patch to a state directory.
+1. **Implementer subagent** works the Grok goal autonomously and writes plan/research/logs/manifest/patch to a state directory.
 2. **K Skeptic subagents** (default 1, bump to 2-3 for high-stakes) audit the Implementer's claim. Each writes a structured verdict JSON.
-3. **Panel aggregation** — any high-confidence refutation → gaps feed back to the Implementer for round N+1.
+3. **Panel aggregation** — any high-confidence refutation → gaps feed back to the Implementer for Grok goal round N+1.
 4. **Anti-ratchet contract** — prior gaps are re-audited every round.
-5. **Loop exits** when all Skeptics accept, or `premature_stop_threshold` (default 5) consecutive rounds produce the same gap.
+5. **Grok goal loop exits** when all Skeptics accept, or `premature_stop_threshold` (default 5) consecutive rounds produce the same gap.
 
 ---
 

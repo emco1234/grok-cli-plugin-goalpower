@@ -1,7 +1,7 @@
 {
   "name": "goalpower",
   "version": "2.0.2",
-  "description": "Goalpower for Grok Build CLI — autonomous long-running goal mode with multi-round skeptic verification. Local reimplementation of native /goal semantics without xAI backend dependency.",
+  "description": "The Grok Goal plugin for Grok Build CLI — autonomous long-running goal mode with multi-round skeptic verification. Works with any Grok-supported model (GLM, Claude, GPT, local).",
   "author": {
     "name": "emco1234",
     "email": "info@contentplanning.ai",

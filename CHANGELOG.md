@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Why this exists
 
-Grok Build CLI's native `/goal` requires xAI backend authentication and the server-side `update_goal` tool. This plugin provides equivalent semantics client-side — works with any model Grok supports (GLM, Claude, GPT, local), no xAI dependency.
+Users wanted a standalone Grok Goal plugin that works with any model Grok Build CLI supports — including custom OpenAI-compatible providers (Z.AI GLM, local models, etc.) — without depending on a specific backend. This plugin provides that as a self-contained installable unit.
 
 [Unreleased]: https://github.com/emco1234/grok-goalpower/compare/v2.0.2...HEAD
 [2.0.2]: https://github.com/emco1234/grok-goalpower/releases/tag/v2.0.2
